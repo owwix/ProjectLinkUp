@@ -5,11 +5,10 @@ export default function LandingPage() {
       <header className="flex justify-between items-center px-6 py-4 shadow">
         <h1 className="text-2xl font-bold text-blue-600">Project Link Up</h1>
         <div className="space-x-4">
-          <a href="/login" className="text-blue-600 hover:underline">Login</a>
-          <a
-            href="/register"
-            className="px-4 py-2 bg-blue-600 text-white rounded hover:bg-blue-700 transition"
-          >
+          <a href="/login" className="text-blue-600 hover:underline">
+            Login
+          </a>
+          <a href="/signup" className="px-4 py-2 bg-blue-600 text-white rounded hover:bg-blue-700 transition">
             Sign Up
           </a>
         </div>
