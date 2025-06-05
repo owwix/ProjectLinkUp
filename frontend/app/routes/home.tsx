@@ -1,25 +1,25 @@
 export default function LandingPage() {
   return (
-    <div className="min-h-screen bg-white text-gray-800 flex flex-col">
+    <div className="min-h-screen flex flex-col">
       {/* Navbar */}
-      <header className="flex justify-between items-center px-6 py-4 shadow">
-        <h1 className="text-2xl font-bold text-blue-600">Project Link Up</h1>
+      <header className="flex bg-slate-850 text-gray-800 justify-between items-center px-6 py-4 shadow">
+        <h1 className="text-2xl font-bold text-blue-500">Project Link Up</h1>
         <div className="space-x-4">
           <a href="/login" className="text-blue-600 hover:underline">
             Login
           </a>
-          <a href="/signup" className="px-4 py-2 bg-blue-600 text-white rounded hover:bg-blue-700 transition">
+          <a href="/signup" className="px-4 py-2 bg-blue-600 text-slate-100 rounded hover:bg-blue-700 transition">
             Sign Up
           </a>
         </div>
       </header>
 
       {/* Hero Section */}
-      <main className="flex-1 flex flex-col justify-center items-center text-center px-6 py-20">
+      <main className="flex-1 bg-slate-900 text-slate-100 flex flex-col justify-center items-center text-center px-6 py-20">
         <h2 className="text-4xl font-bold mb-4">
           What is Project Link Up?
         </h2>
-        <p className="text-lg text-gray-600 max-w-xl mb-6">
+        <p className="text-lg text-slate-400 max-w-xl mb-6">
         Project Link Up is a platform and initiative designed 
         to empower students by making it easier to connect, share 
         ideas, and work together on academic or personal projects.
@@ -30,7 +30,7 @@ export default function LandingPage() {
         </p>
         <a
           href="/signup"
-          className="px-6 py-3 bg-blue-600 text-white rounded text-lg hover:bg-blue-700 transition"
+          className="px-6 py-3 bg-blue-600 text-slate-100 rounded text-lg hover:bg-blue-700 transition"
         >
           Get Started
         </a>

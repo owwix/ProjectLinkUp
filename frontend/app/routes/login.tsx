@@ -1,6 +1,7 @@
 import type { Route } from "./+types/home";
 import { CiUser } from "react-icons/ci";
 import { RiLockPasswordLine } from "react-icons/ri";
+import { useNavigate } from "react-router";
 
 export function meta({}: Route.MetaArgs) {
   return [
@@ -10,6 +11,8 @@ export function meta({}: Route.MetaArgs) {
 }
 
 export default function Login() {
+  const navigate = useNavigate();
+  
   return [
     <div className="form-container max-w-md mx-auto p-6">
         <h2 className="text-center text-2xl font-bold">Login</h2>
@@ -23,7 +26,11 @@ export default function Login() {
                 <input type="password" placeholder="Enter your password" className="w-full border border-gray-300 rounded px-3 py-2 focus:outline-none focus:ring focus:border-blue-500" />
             </div>
         
-            <button className="w-full py-3 text-white bg-blue-600 rounded-md hover:bg-blue-700 transition text-lg font-medium">Sign In</button>
+            <button 
+              onClick={() => navigate("/dashboard")}
+              className="w-full py-3 text-white bg-blue-600 rounded-md hover:bg-blue-700 transition text-lg font-medium">
+              Sign In
+            </button>
         </form>
         <p className="text-center">Dont have an account? Sign Up here.</p>
     </div>
